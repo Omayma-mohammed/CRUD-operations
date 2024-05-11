@@ -1,0 +1,52 @@
+    * {
+        text-transform: capitalize;
+    }
+
+    .border-red {
+        border: solid 2px #dc3545;
+    }
+
+    .profile_ico {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .search_sec {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(181, 4, 4, 1) 100%);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    select,
+    input {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .box_shadow {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+
+    .fs-7 {
+        font-size: 14px;
+    }
+
+    .bg-teal {
+        background: #20c997;
+    }
+
+    .bg-blue {
+        background: #0dcaf0;
+    }
+
+    .bg-orange {
+        background: #fd7e14;
+    }
+
+    .bg-soft-blue
+    {
+        background: rgb(250, 250, 250);
+    }

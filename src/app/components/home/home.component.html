@@ -1,0 +1,194 @@
+<body>
+    <!-- serach section -->
+    <section class="search_sec col-12 mt-2 p-4">
+      <div class="container">
+        <div class="text-start fs-4 text-light fw-semibold">Hi, Mohammed</div>
+        <div class="d-flex align-items-center col-12 bg-light p-2 mt-3 rounded-3">
+          <!-- select option -->
+          <div>
+            <select class="p-2 me-2" name="" id="">
+              <option value="0"> Job ID</option>
+              <option value="0"> Job ID</option>
+              <option value="0"> Job ID</option>
+              <option value="0"> Job ID</option>
+            </select>
+    
+          </div>
+          <!-- select option -->
+          <!-- input serach -->
+          <div class="col-md-10 col-6">
+            <input type="text" class="col-12 ms-3" placeholder="Search By  Job ID">
+    
+          </div>
+          <!-- input serach -->
+          <!-- ico search -->
+          <div class="d-flex align-items-end justify-content-end ms-md-5 ms-3">
+    
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                 class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </div>
+          <!-- ico search -->
+    
+        </div>
+      </div>
+    </section>
+    <!-- serach section -->
+    
+    <!-- chart section -->
+    <section class="container mt-4">
+      <div class="row gap-3 p-3">
+    
+        <div class="bg-soft-blue col-12 col-md-4 d-flex flex-column box_shadow p-3 rounded-3">
+          <div class="d-flex justify-content-between">
+            <div class="fs-4 fw-bold">All Job Status</div>
+            <div>
+              <select name="" id="" class="fs-7 fw-bold">
+                <option value="0">monthly</option>
+                <option value="0">yearly</option>
+                <option value="0">weekly</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class="col-12 mt-4 d-flex justify-content-center align-items-center" id="chart">
+              <div [chart]="chart"></div>
+            </div>
+    
+          </div>
+        </div>
+        <div class="bg-soft-blue col-12 col-md-7 d-flex flex-column box_shadow p-3 rounded-3">
+          <div class="fs-4 fw-bold">my daily Jobs status</div>
+          <div class="fw-semibold text-secondary">latest update at date</div>
+          <div class="row gap-3 flex-wrap d-flex justify-content-statr justify-content-md-center text-nowrap">
+            <div class="col-3 col-md-2 mt-4 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <div class="bg-dark px-2 py-1 rounded-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                       height="16" fill="currentColor" class="bi bi-files-alt text-light"
+                       viewBox="0 0 16 16">
+                    <path
+                      d="M11 0H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2 2 2 0 0 0 2-2V4a2 2 0 0 0-2-2 2 2 0 0 0-2-2m2 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zM2 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </div>
+                <div class="fw-bold text-secondary ms-2 fs-5">3000</div>
+    
+              </div>
+              <div class="text-secondary fw-bold fs-7 mt-2">all Jobs</div>
+            </div>
+            <div class="col-3 col-md-2 mt-4 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <div class="bg-teal px-2 py-1 rounded-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                       height="16" fill="currentColor" class="bi bi-file-check text-light"
+                       viewBox="0 0 16 16">
+                    <path
+                      d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path
+                      d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
+                  </svg>
+                </div>
+                <div class="fw-bold text-secondary ms-2 fs-5">2000</div>
+    
+              </div>
+              <div class="text-secondary fw-bold fs-7 mt-2">success</div>
+            </div>
+            <div class="col-3 col-md-2 mt-4 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <div class="bg-blue px-2 py-1 rounded-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                       class="bi bi-hourglass text-light" viewBox="0 0 16 16">
+                    <path
+                      d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5m2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702c0 .7-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 13v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351v-.702c0-.7.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2z"/>
+                  </svg>
+                </div>
+                <div class="fw-bold text-secondary ms-2 fs-5">1200</div>
+    
+              </div>
+              <div class="text-secondary fw-bold fs-7 mt-2">in progress</div>
+            </div>
+            <div class="col-3 col-md-2 mt-4 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <div class="bg-orange px-2 py-1 rounded-3">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       width="16" height="16" fill="currentColor" class="bi bi-files-alt text-light"
+                       viewBox="0 0 16 16">
+                    <path
+                      d="M11 0H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2 2 2 0 0 0 2-2V4a2 2 0 0 0-2-2 2 2 0 0 0-2-2m2 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zM2 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </div>
+                <div class="fw-bold text-secondary ms-2 fs-5">1000</div>
+    
+              </div>
+              <div class="text-secondary fw-bold fs-7 mt-2">faild</div>
+            </div>
+            <div class="col-3 col-md-2 mt-4 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <div class="bg-warning px-2 py-1 rounded-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                       class="bi bi-arrow-counterclockwise text-light" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/>
+                    <path
+                      d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/>
+                  </svg>
+                </div>
+                <div class="fw-bold text-secondary ms-2 fs-5">300</div>
+    
+              </div>
+              <div class="text-secondary fw-bold fs-7 mt-2">retry</div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+    </section>
+    <!-- chart section -->
+    
+    
+    <section class="container mt-4">
+      <div class="d-flex justify-content-between">
+        <h3 class="fs-4 fw-bold">Recent Activities
+          <div style="width: 35px; height: 4px; background-color: rgb(168, 157, 42); " class="my-2"></div>
+          <div class="fw-semibold text-secondary">Latest Update On 10-05-2024</div>
+        </h3>
+        <div class="text-danger fw-bold fs-5 viewClick" (click)="viewAll()">{{viewText}}</div>
+    
+      </div> 
+      <div class="row p-3 mt-3 gap-3 d-flex justify-content-between">
+        <div class="col-12 col-lg-3 col-sm-6 box_shadow rounded-3 p-3 " *ngFor="let data of displayedData; let i=index">
+          <div class="d-flex align-items-center">
+            <div class="d-flex flex-column col-10">
+              <div class="fs-5 fw-bold">{{ data.id }}</div>
+              <div class="d-flex align-items-center">
+                <div>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                       class="bi bi-files-alt me-2" viewBox="0 0 16 16">
+                    <path
+                      d="M11 0H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2 2 2 0 0 0 2-2V4a2 2 0 0 0-2-2 2 2 0 0 0-2-2m2 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zM2 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </div>
+                <div>
+                  <b>100</b> total Jobs
+                </div>
+              </div>
+              <div class="fw-bold fs-7 mt-1 text-secondary">{{ data.title }}</div>
+              <div class="fs-7 mt-1">10-11-2002</div>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                   class="bi bi-caret-right" viewBox="0 0 16 16">
+                <path
+                  d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    </body>
